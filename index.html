@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://platform.linkedin.com ">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MitmProxy Byte Copy Extension</title>
+</head>
+<body>
+    <div style="padding:50px;text-align:center;">
+        <p>hex to base64:</p>
+        <input type="text" id="hexValue" placeholder="08 03"> <button id="convertBtn">convert</button>
+        <p>result:</p>
+        <textarea id="result" cols="30" rows="10"></textarea>
+
+        <br><br>
+        <i style="font-size:10px;">yes, the design is very bad (or even nonexistent). because I don't understand the fucking frontend.</i>
+        <br><br>
+        <a id="gitLink" href="https://github.com/ahmeth4n"><img style="width:2rem" src="./github.png"></a>
+    </div>
+
+    <script src="./hexToBase64.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+	"name": "Mitmproxy Byte Copy",
+	"description": "MitmProxy Byte Copy Extension",
+	"version": "1.0",
+	"manifest_version": 2,
+	"background" :{
+		"scripts":["./copier.js"]
+	},
+	"browser_action":{
+		"default_title": "MitmProxy ByteCopy",
+		"default_icon": "icon.png",
+		"default_popup": "index.html"
+	},
+	"permissions":[
+		"tabs",
+        "http://*/",
+        "https://*/",
+		"clipboardWrite",
+		"clipboardRead"
+	],
+	"icons":{ "128" : "icon.png"}
+}
