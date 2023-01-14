@@ -25,7 +25,7 @@ if(!document.getElementById("byteCopy")){
             hexCodes += modifyLine; 
         }
 
-        hexCodes = hexCodes.replace("                               ","");
+        hexCodes = hexCodes.replaceAll(" ","");
     
         copy_to_clipboard(hexCodes);
         window.alert('hex values copied to your clipboard!'); 
